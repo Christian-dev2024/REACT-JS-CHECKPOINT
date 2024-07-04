@@ -1,0 +1,136 @@
+.Navbar {
+  background-color: rgb(107, 43, 226);
+  border-radius: 5px;
+  font-family: 'poppins';
+  box-shadow: 2px 2px 5px rgb(43, 17, 90);
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 97.5%;
+}
+
+#logo{
+  text-decoration: none;
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+}
+
+.items {
+  margin-top: 0.4rem;
+  font-size: 17.5px;
+  color: #fff;
+}
+
+.items a{
+  padding-inline: 5rem;
+  text-decoration: none;
+  color: #fff;
+}
+.items a:hover{
+  transition: 0.2s ease;
+  text-shadow: 1px 5px 2px rgb(32, 9, 75);
+}
+
+.Title{
+  margin: 2rem;
+  margin-top: 5rem;
+}
+.Title h1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: rgb(68, 29, 140);
+  font-family: 'poppins';
+  font-size: 35px;
+}
+
+.text{
+  margin-top: 5rem;
+  display: flex;
+  margin-left: 50px;
+}
+
+.text p{
+  font-family: 'poppins';
+  font-size: 25px;
+  color: rgb(55, 24, 111);
+  display: flex;
+}
+
+#container-cards{
+  margin-top: 50px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.Card{
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(103, 29, 252);
+  box-shadow: 2px 2px 5px rgb(43, 17, 90);
+  position: relative;
+}
+
+.Card h3, p{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width:430px){
+  #container-cards{
+    width: 100%;
+    display: grid;
+    padding-inline: 6rem;
+    gap: 1rem;
+  }
+  .Card{
+    width: 500px;
+    height: 800px;
+  }
+  .Title h1{
+    font-size: 60px;
+    width: 600px;
+    position: relative;
+  }
+  .text p{
+    font-size: 40px;
+  }
+  .Card h3, p{
+    font-size: 40px;
+  }
+  .Navbar{
+    width: 645px;
+    height: 100px;
+  }
+  .Navbar .items {
+    display: grid;
+    gap: 1rem;
+  }
+  .Navbar .items a{
+    font-size: 21px;
+  }
+  #logo{
+    font-size: 45px;
+  }
+
+}
+
+@media screen and (min-width:764px) and (max-width : 770px){
+  #container-cards .Card{
+    gap: 0.5rem;
+  }
+
+  .Card{
+    width: 200px;
+    height: 300px;
+  }
+}
+
